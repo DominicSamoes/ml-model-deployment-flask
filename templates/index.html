@@ -17,7 +17,7 @@
                    <div class="form-group col-1-2">
                      <div class="form-field">
                        <span class="form-field-container">
-                         <input type="text" name="experience" placeholder="Number of years worked" pattern="[0-50]{1, 2}" maxlength="2" required="true">
+                         <input type="text" name="experience" placeholder="Number of years worked" pattern="[0-9]|[1-4][0-9]|50" maxlength="2" required="true">
                          <i class="form-field-icon"></i>
                        </span>
                        <p class="form-help">Experience should be between 0 and 50</p>
@@ -26,7 +26,7 @@
                    <div class="form-group col-1-2">
                      <div class="form-field">
                        <span class="form-field-container">
-                         <input type="text" name="text_score" placeholder="Test Score" pattern="[0-10]{1, 2}" maxlength="2"  required="true">
+                         <input type="text" name="text_score" placeholder="Test Score" pattern="[0-9]|10" maxlength="2"  required="true">
                          <i class="form-field-icon"></i>
                        </span>
                        <p class="form-help">Test score should be between 0 and 10</p>
@@ -35,7 +35,7 @@
                    <div class="form-group col-1-2">
                      <div class="form-field">
                        <span class="form-field-container">
-                        <input type="text" name="interview_score" placeholder="Interview Score" pattern="[0-10]{1, 2}" maxlength="2"  required="required" />
+                        <input type="text" name="interview_score" placeholder="Interview Score" pattern="[0-9]|10" maxlength="2"  required="required" />
                          <i class="form-field-icon"></i>
                        </span>
                        <p class="form-help">Interview score should be between 0 and 10</p>
@@ -44,7 +44,7 @@
                    <br>
                    <button type="submit" class="button">Predict</button>
                    <br>
-                   <button class="button" onClick="window.location.reload();">Clear</button>
+                   <button class="button" onClick="window.location.reload()">Clear</button>
                  </fieldset>
                 </form>
                 <p class="form-help">{{ prediction_text }}</p>
