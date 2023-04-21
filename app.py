@@ -8,9 +8,11 @@ Created on Wed Apr 19 11:17:45 2023
 
 import numpy as np
 from flask import Flask, request, jsonify, render_template
+from flask_cors import CORS
 import pickle
 
 app = Flask(__name__)
+CORS(app)
 model = pickle.load(open('model.pkl', 'rb'))
 
 @app.route('/')
@@ -33,10 +35,12 @@ def predict():
 @app.route('/predict_api', methods=['POST'])
 def predict_api():
     """
-    For returning result when called as an API by any direct API request
+    For returning result when called as a POST request
     """
     data = request.get_json(force=True)
-    prediction = model.predict([np.array(list(data.values()))])
+    int_features = [int(x) for x in list(data.values())]
+    final_features = [np.array(int_features)]
+    prediction = model.predict(final_features)
     
     output = prediction[0]
     return jsonify(output)
