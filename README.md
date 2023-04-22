@@ -9,13 +9,13 @@ Dominic Samo, BSc Computer Science and Physics, Certified Data Scientist and Sof
 * Ubuntu 22.04 LTS
 
 ### Flask
-* Flask ML Model and Web App bundled together
-* Model 
+* Flask is a web framework, it’s a Python module that lets you develop web applications easily. It’s has a small and easy-to-extend core: it’s a microframework that doesn’t include an ORM (Object Relational Manager) or such features [(Python Basics Org, 2023)](https://pythonbasics.org/what-is-flask-python/).
+* In this project, Flask ML Model and Web App are bundled together
 
 ## Extra Package Installed
 CORS
 * It is a Flask extension for handling Cross Origin Resource Sharing (CORS), making cross-origin AJAX possible
-* $ ```pip install -U flask-cors```
+* It is installed by typing $ ```pip install -U flask-cors``` on a Termianl/Command Line
 * Flask will be used for handling all API requests
 
 ## Directory Tree
@@ -84,7 +84,8 @@ The Flask web app running on a browser showing a prediction. It is using the ```
 
 ## Attribution
 
-  For inspiration I used [Deploy Machine Learning Model using Flask](https://www.youtube.com/watch?v=UbCWoMf80PY&t=14s) by Krish Naik
+  * For inspiration I used [Deploy Machine Learning Model using Flask](https://www.youtube.com/watch?v=UbCWoMf80PY&t=14s) by Krish Naik
+  * If you liked my work, you can Star the project on GitHub and reference me whenever you spin your own version of the work.
 
 ---
 
