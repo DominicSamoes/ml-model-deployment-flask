@@ -43,5 +43,5 @@ regressor.fit(X, y)
 # Saving model to pkl file
 pickle.dump(regressor, open('model.pkl', 'wb'))
 
-# Loading model to comapre the results
+# Loading model to compare the results
 model = pickle.load(open('model.pkl', 'rb'))
